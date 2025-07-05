@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <input type="text" id="cityInput" placeholder="Enter city..." />
+      <button onclick="getWeatherByCity()">Search</button>
+    </div>
+
+    <div class="weather-card">
+      <h2 id="location">--</h2>
+      <p id="datetime">--</p>
+
+      <div class="main">
+        <img id="icon" src="" alt="Weather icon" />
+        <div class="temp">
+          <h1><img src="https://cdn-icons-png.flaticon.com/512/1684/1684377.png" alt="thermometer" class="icon-small"> <span id="temp">--°</span></h1>
+          <p id="feels">Feels like --°</p>
+          <p id="desc">--</p>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div><img src="https://cdn-icons-png.flaticon.com/512/869/869869.png" /> Sunrise: <span id="sunrise">--</span></div>
+        <div><img src="https://cdn-icons-png.flaticon.com/512/869/869869.png" /> Sunset: <span id="sunset">--</span></div>
+        <div><img src="https://cdn-icons-png.flaticon.com/512/728/728093.png" /> Humidity: <span id="humidity">--%</span></div>
+        <div><img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" /> Wind: <span id="wind">-- km/h</span></div>
+        <div><img src="https://cdn-icons-png.flaticon.com/512/639/639365.png" /> Pressure: <span id="pressure">-- mb</span></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
